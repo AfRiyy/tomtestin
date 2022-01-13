@@ -15,21 +15,21 @@
     <h2>Készítő: Madarász Dávid</h2>
     <h3>Dátum: 2022.01.13</h3>
     
-    <form [formGroup]="testtomegForm" class="form">
+    <form [formGroup]="testtomegForm" class="mb-3">
       <label class="form-label">Tömeg (kg)</label>
       <br>
-      <input id="tomeg"formControlName="tomeg">
+      <input class="form-control text-center" formControlName="tomeg">
       <br>
     
       <label class="form-label">Magasság (m)</label>
       <br>
-      <input id="magassag"formControlName="magassag">
+      <input class="form-control text-center" formControlName="magassag">
       <br>
       <button class="btn btn-primary" (click)="onClickSzamito()">Számít</button>
       <br>
       <label>Testömeg index:</label>
       <br>
-      <input formControlName="testtomegindex" [disabled]="true">
+      <input class="form-control text-center" formControlName="testtomegindex" [disabled]="true">
 
     </form>
   </div>
