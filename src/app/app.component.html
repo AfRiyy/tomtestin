@@ -1,0 +1,36 @@
+<!-- /*
+* File: app.components.html
+* Author: Madarász Dávid
+* Copyright: 2022, Madarász Dávid
+* Group: Szoft II/N
+* Date: 2022-01-13
+* Github: https://github.com/afriyy/
+* Licenc: GNU GPL
+*/ -->
+
+
+<div class="container">
+  <div class="text-center">
+    <h1>Testtömeg index számoló</h1>
+    <h2>Készítő: Madarász Dávid</h2>
+    <h3>Dátum: 2022.01.13</h3>
+    
+    <form [formGroup]="testtomegForm" class="form">
+      <label class="form-label">Tömeg (kg)</label>
+      <br>
+      <input id="tomeg"formControlName="tomeg">
+      <br>
+    
+      <label class="form-label">Magasság (m)</label>
+      <br>
+      <input id="magassag"formControlName="magassag">
+      <br>
+      <button class="btn btn-primary" (click)="onClickSzamito()">Számít</button>
+      <br>
+      <label>Testömeg index:</label>
+      <br>
+      <input formControlName="testtomegindex" [disabled]="true">
+
+    </form>
+  </div>
+</div>
